@@ -11,20 +11,20 @@
     background-color: rgba(38, 6, 221, 0.4); /* Black w/ opacity */
   }
   
-  .backimg{
-    flex-wrap: inherit;
+.starter-img{
+    flex-wrap: wrap;
+    margin: auto auto auto;
     position: relative;
-    /*border: 1px solid black;*/
-    margin: 0px 0px 0px 185px;
-    width: 300px;
     object-fit: fill;
+    background-color: khaki;
 
   }
 
  .starter-text{
     text-align: center;
+    font-size: 40px;
+    background-color: khaki;
   }
-  
 
   
   /* Modal Content/Box */
@@ -50,3 +50,4 @@
     text-decoration: none;
     cursor: pointer;
   }
+ 
