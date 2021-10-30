@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
 
     <title>Poke Parenting!</title>
 </head>
@@ -15,16 +15,21 @@
 
     <!-- Pokemon Api Testing-->
     <div class="container row s1 z-depth-2">
-        <img class="responsive-img" src="assets/images/Poke-starters.png" class="center-align">
-        <h1 class="center" style='font-size:20px; padding:20px'>Choose Your starter!</h1>
+    <div class="backimg">
+        <img src="assets/images/Poke-starters.png" alt="Poke-starters">
+        <div>
+            <p class="starter-text">Choose Your Starter</p>
+        </div>
+    </div>
 
     
 
         <!-- Wrap what you want to have pokedata in div with id of pokemon you want to pull-->
     <div class="PokeData" id="bulbasaur">
         <div class="container col s4 z-depth-2">
-            <p id ="PokeName" class="center-align">Bulbasaur</p>
+            <p id ="PokeName" class="center-align" class="card-panel red lighten-3">Bulbasaur</p>
             <img class="responsive-img" height="75%"  style="margin-top: 22px" id="PokePic" src='assets/images/bulbasaur.jpeg'>
+            <a class="waves-effect waves-light btn-small center-align">I Choose You!</a>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus quasi fugiat sapiente alias labore? Et aliquam ab dolores doloremque eaque corrupti, neque, dolorum esse amet quas, ipsum excepturi odit omnis?</p>
         </div>
     </div>
@@ -33,6 +38,7 @@
         <div class="container col s4 z-depth-2">
             <p id ="PokeName" class="center-align">Charmander</p>
             <img class="responsive-img" style="margin-top: 105px" id="PokePic" src='assets/images/Charmander.jpeg'>
+            <a class="waves-effect waves-light btn-small center-align">I Choose You!</a>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus quasi fugiat sapiente alias labore? Et aliquam ab dolores doloremque eaque corrupti, neque, dolorum esse amet quas, ipsum excepturi odit omnis?</p>
         </div>
     </div>
@@ -42,6 +48,7 @@
         <div class="container col s4 z-depth-2">
             <p id ="PokeName" class="center-align">Squirtle</p>
             <img class="responsive-img" style="margin-top: 77px" id="PokePic" src='assets/images/Squirtle.jpeg'>
+            <a class="waves-effect waves-light btn-small center-align">I Choose You!</a>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus quasi fugiat sapiente alias labore? Et aliquam ab dolores doloremque eaque corrupti, neque, dolorum esse amet quas, ipsum excepturi odit omnis?</p>
         </div>
     </div>
