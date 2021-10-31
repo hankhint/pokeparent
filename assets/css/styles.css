@@ -1,0 +1,20 @@
+.background-scene{
+    height: 240px;
+    width:400px;
+    position: relative;
+    margin:auto;
+}
+
+.enemypokemon{
+    position: absolute;
+    bottom:130px;
+    right:60px;
+
+}
+
+.playerpokemon{
+    position: absolute;
+    bottom:0px;
+    left:40px;
+    height: 100px;
+}

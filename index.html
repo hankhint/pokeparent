@@ -7,43 +7,28 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
 
     <title>Poke Parenting!</title>
 </head>
 <body>
+    <div class="container  z-depth-2">
+        <h1 class="center" style='font-size:20px; padding:20px'>Fight!</h1>
 
-    <!-- Pokemon Api Testing-->
-    <div class="container row s1 z-depth-2">
-        <h1 class="center" style='font-size:20px; padding:20px'>Choose Your starter!</h1>
+    <div class="background-scene center" style="background-image: url(assets/images/BattlePad-grass.png), url(assets/images/battleground-grass.png);">
+        <div class="PokeData" id="bulbasaur">
+            <img class="enemypokemon" id="PokePicGif" src=''>
+        </div>
 
-        <!-- Wrap what you want to have pokedata in div with id of pokemon you want to pull-->
-    <div class="PokeData" id="bulbasaur">
-        <div class="container col s4 z-depth-2">
-            <p id ="PokeName"></p>
-            <img class="" style="margin-top: 20px" id="PokePic" src=''>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus quasi fugiat sapiente alias labore? Et aliquam ab dolores doloremque eaque corrupti, neque, dolorum esse amet quas, ipsum excepturi odit omnis?</p>
+        <div class="PokeData" id="charmander">
+            <img class="playerpokemon" id="PokePicGif" src=''>
         </div>
     </div>
-
-    <div class="PokeData" id="charmander">
-        <div class="container col s4 z-depth-2">
-            <p id ="PokeName"></p>
-            <img class="" style="margin-top: 20px" id="PokePic" src=''>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus quasi fugiat sapiente alias labore? Et aliquam ab dolores doloremque eaque corrupti, neque, dolorum esse amet quas, ipsum excepturi odit omnis?</p>
-        </div>
-    </div>
-
-
-    <div class="PokeData" id="dunsparce">
-        <div class="container col s4 z-depth-2">
-            <p id ="PokeName"></p>
-            <img class="" style="margin-top: 20px" id="PokePic" src=''>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus quasi fugiat sapiente alias labore? Et aliquam ab dolores doloremque eaque corrupti, neque, dolorum esse amet quas, ipsum excepturi odit omnis?</p>
-        </div>
-    </div>
+    
 
     <script src="assets/js/script.js"></script>
+    <script src="assets/js/fight.js"></script>
+    
 
 </body>
 </html>

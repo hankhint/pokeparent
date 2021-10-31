@@ -28,10 +28,7 @@ function PokeCommands(data){
     PokeNameEl.textContent = data.name;
     PokeNameEl.id = '';
 
-  //var PokePicGifEl = document.querySelector("#PokePicGif");
-  //  PokePicGifEl.src = "https://projectpokemon.org/images/normal-sprite/" + data.name + ".gif";//data.sprites.front_default;
-  //  PokePicGifEl.alt = data.name;
-  // PokePicGifEl.id = '';
+  
 
 //<img id ="PokePic" src='leave empty' ></p>
   var PokePicEl = document.querySelector("#PokePic");
@@ -49,21 +46,3 @@ function PokeCommands(data){
 getPokeApi();
 
 
-// WEATER API ---------------------------------------
-
-//api.openweathermap.org/data/2.5/forecast?id=524901&appid={API key}
-
-// var getCityWeather = function (city) {
-//     var apiUrl = 'https://api.openweathermap.org/data/2.5/weather?id=2172797&appid=67134688628a630443996290ce30ced4'
-//     fetch(apiUrl)
-//     .then(function (response) {
-//         if (response.ok) {
-//             console.log(response);
-//             response.json().then(function (data) {
-//                 console.log(data);
-//             });
-//         }
-//     });
-//  };
-
-//  getCityWeather();
