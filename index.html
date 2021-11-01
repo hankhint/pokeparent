@@ -15,18 +15,28 @@
     <div class="container  z-depth-2">
         <h1 class="center" style='font-size:20px; padding:20px'>Fight!</h1>
 
-    <div class="background-scene center" style="background-image: url(assets/images/BattlePad-grass.png), url(assets/images/battleground-grass.png);">
-        <div class="PokeData" id="bulbasaur">
-            <img class="enemypokemon" id="PokePicGif" src=''>
+        <div class="background-scene center" style="background-image: url(assets/images/BattlePad-grass.png), url(assets/images/battleground-grass.png);">
+            <div class="PokeEnemy" id="bulbasaur">
+                <div class="container" id="enemy-battlebox" style="font-family: 'Press Start 2P';">
+                    <p id="enemyname"></p>
+                    <p id="enemylv"></p>
+
+                    <div class="" id="enemyredbar" style="border:1px solid rgb(0, 0, 0);"></div>
+                    <div class="" id="enemyhpbar" style="border:1px solid rgb(0, 0, 0);"></div>
+                    
+                </div>
+                <img class="enemypokemon" id="enemygif" src=''>
+            </div>
+
+            <div class="PokePlayer" id="charmander">
+                <h1 class="PokeStats" id="hp"></h1>
+                <img class="playerpokemon" id="PokePicGif" src=''>
+            </div>
         </div>
 
-        <div class="PokeData" id="charmander">
-            <img class="playerpokemon" id="PokePicGif" src=''>
-        </div>
     </div>
-    
 
-    <script src="assets/js/script.js"></script>
+    <!--<script src="assets/js/script.js"></script>-->
     <script src="assets/js/fight.js"></script>
     
 
