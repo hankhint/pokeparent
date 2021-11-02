@@ -1,49 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
 
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Pokemon Parenting</title>
+  </head>
 
-    <title>Poke Parenting!</title>
-</head>
-<body>
+  <body>
+    <header>
+      <h1>PokeParent</h1>
+    </header>
 
-    <!-- Pokemon Api Testing-->
-    <div class="container row s1 z-depth-2">
-        <h1 class="center" style='font-size:20px; padding:20px'>Choose Your starter!</h1>
-
-        <!-- Wrap what you want to have pokedata in div with id of pokemon you want to pull-->
-    <div class="PokeData" id="bulbasaur">
-        <div class="container col s4 z-depth-2">
-            <p id ="PokeName"></p>
-            <img class="z-depth-2 " style="margin-top: 20px" id="PokePic" src=''>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus quasi fugiat sapiente alias labore? Et aliquam ab dolores doloremque eaque corrupti, neque, dolorum esse amet quas, ipsum excepturi odit omnis?</p>
+    <main>
+      <section>
+        <div>
+          <h1>City Weather</h1>
+          <div>
+            <img />
+            Weather Affects On Pokemon
+          </div>
         </div>
-    </div>
-
-    <div class="PokeData" id="charmander">
-        <div class="container col s4 z-depth-2">
-            <p id ="PokeName"></p>
-            <img class="z-depth-2 " style="margin-top: 20px" id="PokePic" src=''>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus quasi fugiat sapiente alias labore? Et aliquam ab dolores doloremque eaque corrupti, neque, dolorum esse amet quas, ipsum excepturi odit omnis?</p>
+      </section>
+      <section>
+        <figure>Health: 100</figure>
+        <figure>Pokemon Picture</figure>
+        <div>
+          <button>Fight</button>
+          <button>Inventory</button>
+          <button>Store</button>
+          <button>Stats</button>
         </div>
-    </div>
+      </section>
+    </main>
 
-
-    <div class="PokeData" id="squirtle">
-        <div class="container col s4 z-depth-2">
-            <p id ="PokeName"></p>
-            <img class="z-depth-2 " style="margin-top: 20px" id="PokePic" src=''>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus quasi fugiat sapiente alias labore? Et aliquam ab dolores doloremque eaque corrupti, neque, dolorum esse amet quas, ipsum excepturi odit omnis?</p>
-        </div>
-    </div>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
     <script src="assets/js/script.js"></script>
-
-</body>
+  </body>
 </html>

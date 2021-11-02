@@ -1,0 +1,47 @@
+.modal {
+    display: flexbox; /* Hidden by default */
+    position: flex; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(240, 12, 12); /* Fallback color */
+    background-color: rgba(38, 6, 221, 0.4); /* Black w/ opacity */
+  }
+
+  .hero-image{
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/Users/emiliocalderon/Desktop/pokeparent/assets/images/Poke-starters.png");
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*display: flexbox;*/
+    position: flex;
+
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: red;
+    margin: 25% auto; /* 15% from the top and centered */
+    padding: 20px 0px 0px 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
