@@ -1,6 +1,6 @@
 .modal {
     display: flexbox; /* Hidden by default */
-    position: flex; /* Stay in place */
+    position: absolute; /* Stay in place */
     z-index: 1; /* Sit on top */
     left: 0;
     top: 0;
@@ -10,17 +10,22 @@
     background-color: rgb(240, 12, 12); /* Fallback color */
     background-color: rgba(38, 6, 221, 0.4); /* Black w/ opacity */
   }
-
-  .hero-image{
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/Users/emiliocalderon/Desktop/pokeparent/assets/images/Poke-starters.png");
-    height: 50%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    /*display: flexbox;*/
-    position: flex;
+  
+.starter-img{
+    flex-wrap: wrap;
+    margin: auto auto auto;
+    position: relative;
+    object-fit: fill;
+    background-color: khaki;
 
   }
+
+ .starter-text{
+    text-align: center;
+    font-size: 40px;
+    background-color: khaki;
+  }
+
   
   /* Modal Content/Box */
   .modal-content {
@@ -45,3 +50,4 @@
     text-decoration: none;
     cursor: pointer;
   }
+ 
