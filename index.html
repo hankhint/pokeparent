@@ -44,7 +44,7 @@
             A strange seed was planted on its back at birth. The plant sprouts
             and grows with this Pokémon.
           </p>
-          <button id="choosebtn">I Choose You!</button>
+          <label for="serveri"> Decide: </label><button id="savechoice1" onclick="saveData1()" type="button" value="Bulbasaur" id="Save">I Choose You</button>
         </div>
       </div>
 
@@ -61,7 +61,7 @@
             Obviously prefers hot places. When it rains, steam is said to spout
             from the tip of its tail.
           </p>
-          <button id="choosebtn">I Choose You!</button>
+          <label for="serveri"> Decide: </label><button id="savechoice2" onclick="saveData2()" type="button" value="Charmander" id="Save">I Choose You</button>
         </div>
       </div>
 
@@ -78,11 +78,19 @@
             After birth, its back swells and hardens into a shell. Powerful
             sprays foam from its mouth.
           </p>
-          <button id="choosebtn">I Choose You!</button>
+          <div class="container z-depth-2">
+            <imput class="storage" type="text">
+            <label for="serveri"> Decide: </label><button id="savechoice3" onclick="saveData()" type="button" value="Squirtle" id="Save">I Choose You</button>
+          </div>
+          
         </div>
       </div>
+      
 
       <script src="assets/js/script.js"></script>
     </div>
+    <form class="center-align" action="./pokedex.html">
+      <input type="submit" value="Once You Have Chosen Click HERE" />
+  </form>
   </body>
 </html>

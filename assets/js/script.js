@@ -8,21 +8,74 @@ var btn = document.getElementById("myBtn");
 var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks on the button, open the modal
-btn.onclick = function () {
-  modal.style.display = "block";
-};
+//btn.onclick = function () {
+ // modal.style.display = "block";
+//};
 
 // When the user clicks on <span> (x), close the modal
-span.onclick = function () {
-  modal.style.display = "none";
-};
+//span.onclick = function () {
+ // modal.style.display = "none";
+//};
 
 // When the user clicks anywhere outside of the modal, close it
-window.onclick = function (event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-};
+//window.onclick = function (event) {
+  //if (event.target == modal) {
+   // modal.style.display = "none";
+  //}
+//};
+var save_button1 = document.getElementById('Save')
+save_button1.onclick = saveData1;
+
+function saveData1(){
+  var input = document.getElementById("savechoice1");
+  localStorage.setItem("Bulbasaur", input.value);
+  var storedValue = localStorage.getItem("Bulbasaur");
+}
+
+
+
+
+var save_button2 = document.getElementById('Save')
+save_button2.onclick = saveData2;
+
+function saveData2(){
+  var input = document.getElementById("savechoice2");
+  localStorage.setItem("Charmander", input.value);
+  var storedValue = localStorage.getItem("Charmander");
+}
+
+
+
+
+var save_button3 = document.getElementById('Save')
+save_button3.onclick = saveData;
+
+function saveData(){
+  var input = document.getElementById("savechoice3");
+  localStorage.setItem("Squirtle", input.value);
+  var storedValue = localStorage.getItem("Squirtle");
+}
+
+
+//const storageinput =  document.querySelector('.storage');
+//const text = document.querySelector('.text');
+//const button = document.querySelector('.button');
+
+//storageinput.addEventListener('click', button => {
+
+//}
+
+//)
+//const saveTolocalStorage = () => {
+ // localStorage.setItem('textinput', text.textcontent)
+//}
+//button.addEventListener('click', saveTolocalStorage)
+
+
+
+
+
+
 
 //To get a Pokemons data ---> <div class="PokeData" id="bulbasaur"> <CODE BLOCK> </div>
 var getPokeApi = function () {
