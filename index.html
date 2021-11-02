@@ -1,25 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
-    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
     <link rel="stylesheet" href="assets/css/styles.css" />
 
     <title>Poke Parenting!</title>
-  </head>
-  <body>
+</head>
+
+<body>
+    <!--START navbar-->
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo">Pokemon Parenting</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <!-- <li>  <img
+                src="assets/images/Poke-starters.png"
+                class="starter-img"
+                class="center-align"
+                id="poke-starter"
+              /></li> -->
+
+            </ul>
+        </div>
+    </nav>
+    <!--END navbar-->
+
+    <!--START pokemon card container-->
+    <div class="row">
+
+        <!--START bulbasaur card-->
+        <div class="col s4">
+            <div class="card blue-grey darken-1">
+                <div class="card-content white-text">
+                    <span class="card-title">bulbasaur</span>
+                   
+                        <img class="responsive-img" height="100%" width="100%" src="./assets/images/bulbasaursprite.png">
+                          
+                </div>
+                <div class="card-action">
+                    <a href="#">This is a link</a>
+
+                </div>
+            </div>
+        </div>
+
+        <!--START charmander card-->
+        <div class="col s4">
+            <div class="card blue-grey darken-1">
+                <div class="card-content white-text">
+                    <span class="card-title">charmander</span>
+                    <p><img class="img-responsive" height="100%" width="100%" src="./assets/images/charmandersprite.png"></p>
+                </div>
+                <div class="card-action">
+                    <a href="#">This is a link</a>
+
+                </div>
+            </div>
+        </div>
+
+        <!--START squirtle card-->
+        <div class="col s4">
+            <div class="card blue-grey darken-1">
+                <div class="card-content white-text">
+                    <span class="card-title">squirtle</span>
+                    <p><img class="img-responsive" height="100%" width="100%" src="./assets/images/squirtlesprite.png"></p>
+                </div>
+                <div class="card-action">
+                    <a href="#">This is a link</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <div class="row">
+
+    </div>
+
+
+
+    <div class="row">
+
+
+
+    </div>
+
     <!-- Pokemon Api Testing-->
-    <div class="container row s1 z-depth-2">
+    <!-- <div class="container row s1 z-depth-2">
       <div>
         <img
           src="assets/images/Poke-starters.png"
@@ -28,10 +103,11 @@
           id="poke-starter"
         />
         <h1 class="starter-text">Choose Your Starter!</h1>
-      </div>
+      </div> -->
 
-      <!-- Wrap what you want to have pokedata in div with id of pokemon you want to pull-->
-      <div class="PokeData" id="bulbasaur">
+    <!-- Wrap what you want to have pokedata in div with id of pokemon you want to pull-->
+
+    <!-- <div class="PokeData" id="bulbasaur">
         <div class="container col s4 z-depth-2">
           <p id="PokeName" class="center-align">Bulbasaur</p>
           <img
@@ -47,6 +123,8 @@
           <button id="choosebtn">I Choose You!</button>
         </div>
       </div>
+
+      
 
       <div class="PokeData" id="charmander">
         <div class="container col s4 z-depth-2">
@@ -80,9 +158,10 @@
           </p>
           <button id="choosebtn">I Choose You!</button>
         </div>
-      </div>
+      </div> -->
 
-      <script src="assets/js/script.js"></script>
+    <script src="assets/js/script.js"></script>
     </div>
-  </body>
+</body>
+
 </html>

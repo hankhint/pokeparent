@@ -50,3 +50,9 @@
   text-decoration: none;
   cursor: pointer;
 }
+
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
