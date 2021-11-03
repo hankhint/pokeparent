@@ -28,8 +28,8 @@ save_button1.onclick = saveData1;
 
 function saveData1(){
   var input = document.getElementById("savechoice1");
-  localStorage.setItem("Bulbasaur", input.value);
-  var storedValue = localStorage.getItem("Bulbasaur");
+  localStorage.setItem("pokemon", input.value);
+  var storedValue = localStorage.getItem("pokemon");
 }
 
 
@@ -40,8 +40,8 @@ save_button2.onclick = saveData2;
 
 function saveData2(){
   var input = document.getElementById("savechoice2");
-  localStorage.setItem("Charmander", input.value);
-  var storedValue = localStorage.getItem("Charmander");
+  localStorage.setItem("pokemon", input.value);
+  var storedValue = localStorage.getItem("pokemon");
 }
 
 
@@ -52,8 +52,8 @@ save_button3.onclick = saveData;
 
 function saveData(){
   var input = document.getElementById("savechoice3");
-  localStorage.setItem("Squirtle", input.value);
-  var storedValue = localStorage.getItem("Squirtle");
+  localStorage.setItem("pokemon", input.value);
+  var storedValue = localStorage.getItem("pokemon");
 }
 
 
@@ -79,7 +79,7 @@ function saveData(){
 
 //To get a Pokemons data ---> <div class="PokeData" id="bulbasaur"> <CODE BLOCK> </div>
 var getPokeApi = function () {
-  var PokeDataEl = document.querySelectorAll(".PokeData");
+  var PokeDataEl = localStorage.getItem("value");
   console.log(PokeDataEl);
 
   for (i = 0; i < PokeDataEl.length; i++) {
