@@ -2,6 +2,13 @@
 function probability(n){
     return Math.random() < n;
   }
+
+  function getMeta(url, callback) {
+    var img = new Image();
+    img.src = url;
+    img.onload = function() { callback(this.width, this.height); }
+}
+
   //To get a Pokemons data ---> <div class="PokeData" id="bulbasaur"> <CODE BLOCK> </div>
   var getPokeApi = function() {
 
@@ -91,6 +98,12 @@ function probability(n){
 
     var playerLvEl = document.querySelector("#playerlv");
     playerLvEl.textContent = "Lv"+stats[0];
+
+    var playerHpEl = document.querySelector("#playerhp");
+    playerHpEl.textContent = stats[2] + "/" + stats[1];
+
+
+
 }
 
   getPokeApi();

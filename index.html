@@ -16,7 +16,8 @@
         <h1 class="center" style='font-size:20px; padding:20px'>Fight!</h1>
 
         <div class="background-scene center" style="background-image: url(assets/images/BattlePad-grass.png), url(assets/images/battleground-grass.png);">
-            <div class="PokeEnemy" id="dunsparce">
+            <!-- Enemy pokemon -->
+            <div class="PokeEnemy" id="bulbasaur">
                 <div class="container" id="enemy-battlebox" style="font-family: 'Press Start 2P';">
                     <p id="enemyname"></p>
                     <p id="enemylv"></p>
@@ -25,22 +26,29 @@
                     <div class="" id="enemyhpbar" style="border:1px solid rgb(0, 0, 0);"></div>
                     
                 </div>
-                <img class="enemypokemon" id="enemygif" src=''>
+                <div class="enemy-position">
+                    <img class="enemypokemon" id="enemygif" src=''>
+                </div>
             </div>
-
-            <div class="PokePlayer" id="charmander">
+            <!-- Player Pokemon -->
+            <div class="PokePlayer" id="bulbasaur">
                 <div class="container" id="player-battlebox" style="font-family: 'Press Start 2P';">
                     <p id="playername"></p>
                     <p id="playerlv"></p>
 
                     <div class="" id="playerredbar" style="border:1px solid rgb(0, 0, 0);"></div>
                     <div class="" id="playerhpbar" style="border:1px solid rgb(0, 0, 0);"></div>
+                    <p id = "playerhp"></p>
                     
                 </div>
-                <img class="playerpokemon" id="playergif" src=''>
+                <div class="player-position">
+                    <img class="playerpokemon" id="playergif" src=''>
+                </div>
             </div>
         </div>
+        <div class="container z-depth-2" id="menu">
 
+        </div>
     </div>
 
     <!--<script src="assets/js/script.js"></script>-->

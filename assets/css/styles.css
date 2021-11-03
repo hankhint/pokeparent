@@ -7,20 +7,41 @@ h1 {
     width:400px;
     position: relative;
     margin:auto;
+    overflow: hidden;
 }
 
 .enemypokemon{
     position: absolute;
-    bottom:130px;
-    right:15%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
 
+.enemy-position{
+    position: absolute;
+    width: 200px;
+    height: 20px;
+    left: 220px;
+    top: 90px;
 }
 
 .playerpokemon{
     position: absolute;
-    bottom:0px;
-    left:14%;
-    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.player-position{
+    position: absolute;
+    width: 200px;
+    height: 20px;
+    bottom: 10px;
+    right: 175px;
 }
 
 #enemy-battlebox{
@@ -107,4 +128,17 @@ h1 {
     height: 7px;
     border-radius: 5px;
     
+}
+
+#playerhp{
+    position:absolute;
+    top: 30px;
+    right: 0px;
+}
+
+#menu{
+    height: 120px;
+    width: 400px;
+    border: solid rgb(0, 80, 134) 5px;
+    border-radius: 0;
 }
