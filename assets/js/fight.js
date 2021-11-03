@@ -3,17 +3,21 @@ function probability(n){
     return Math.random() < n;
   }
 
+  function getRandomInt(max) {
+    var a = Math.floor(Math.random() * max);
+    return a;
+  }
+
   function getMeta(url, callback) {
     var img = new Image();
     img.src = url;
     img.onload = function() { callback(this.width, this.height); }
 }
 
-  //To get a Pokemons data ---> <div class="PokeData" id="bulbasaur"> <CODE BLOCK> </div>
   var getPokeApi = function() {
 
     var PokeDataEl = document.querySelector(".PokeEnemy");
-        var apiUrl = "https://pokeapi.co/api/v2/pokemon/" + PokeDataEl.id;
+        var apiUrl = "https://pokeapi.co/api/v2/pokemon/" + (getRandomInt(808)+1);//PokeDataEl.id;
         fetch(apiUrl).then(function(response) {
           response.json().then(function(data) {
             enemypokemon(data);
@@ -24,6 +28,7 @@ function probability(n){
         var apiUrl = "https://pokeapi.co/api/v2/pokemon/" + PokeDataEl.id;
         fetch(apiUrl).then(function(response) {
           response.json().then(function(data) {
+            console.log(data);
             playerpokemon(data);
           });
         });
@@ -31,8 +36,19 @@ function probability(n){
   
   
   function enemypokemon(data){
-    var img = "https://projectpokemon.org/images/normal-sprite/" + data.name + ".gif";
-    var name = data.name; 
+
+    //is shiny??
+    if(probability(.000125) == true){
+      var img = "https://projectpokemon.org/images/shiny-sprite/" + data.name + ".gif";
+      var name = data.name + "☆";
+      console.log("HeeHeeShiny");
+    }
+    else {
+      var img = "https://projectpokemon.org/images/normal-sprite/" + data.name + ".gif";
+      var name = data.name; 
+    }
+
+    //enemy stats
     var PokeStats = data.stats;
     var level = 20;
     var Maxhp = Math.floor(0.01 * (2 * PokeStats[0].base_stat ) * level) + level + 10;
@@ -44,7 +60,32 @@ function probability(n){
     var hp = Maxhp;
     var enemystats = [level,Maxhp,hp,atk,def,spAtk,spDef,speed];
 
+    var enemypossibleMoves= [];
+
+    //get possible moves
+    for (i=0;i<data.moves.length;i++){
+      if(data.moves[i].version_group_details[0].level_learned_at <= level && data.moves[i].version_group_details[0].level_learned_at > 0){
+        enemypossibleMoves.push(data.moves[i].move.url);
+      }
+    }
+    //get four random moves
+    var enemyMoves = [];
+    for(i=0;i<4;i++){
+      enemyMoves.push(enemypossibleMoves[i]);
+    }
       enemyFill(name, img, enemystats);
+  }
+
+  function enemyAbilitiesCall(apiUrl){
+        fetch(apiUrl).then(function(response) {
+          response.json().then(function(data) {
+            enemyAbilities(data);
+          });
+        });
+  }
+
+  function enemyAbilities(){
+    
   }
   
   function enemyFill(name, img, stats){
@@ -57,6 +98,10 @@ function probability(n){
 
       var enemygifEl = document.querySelector("#enemygif");
       enemygifEl.src = img;
+
+      enemygifEl.onerror = function () {
+        getPokeApi();
+      };
 
       var enemynameEl = document.querySelector("#enemyname");
       enemynameEl.textContent = name.toUpperCase();
