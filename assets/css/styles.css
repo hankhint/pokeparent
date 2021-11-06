@@ -1,3 +1,5 @@
+<<<<<<< HEAD
+=======
 .modal {
   display: flexbox; /* Hidden by default */
   position: absolute; /* Stay in place */
@@ -53,6 +55,10 @@
 #returnedimg{
 
 }
+<<<<<<< HEAD
 #weathericon{
   size: 200px;
 }
+=======
+>>>>>>> 2cda6e2c471f1e6529e243decea1c5f8378f49ed
+>>>>>>> b3371ba82c762aaf077bf245b96d91af607e6a76
