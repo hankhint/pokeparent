@@ -1,64 +1,79 @@
 var PokeDataEl = localStorage.getItem("pokemon");
 console.log(PokeDataEl);
-var getPokeApi = function () {
-  //for (i = 0; i < PokeDataEl.length; i++) {
-
+//var getPokeApi = function () {
+  
+   // let response = fetch("https://pokeapi.co/api/v2/pokemon/" + PokeDataEl )
+  //var apiUrl = "https://pokeapi.co/api/v2/pokemon/" + PokeDataEl;
+ // console.log(apiUrl);
+// fetch(apiUrl).then(function (response) {
+  //  response.json().then(function (data) {
+ //     PokeCommands(data);
+  //  });
+ 
+//  }
+//}
+function PokeCommands(data) {
+  // var PokePicEl = document.querySelector("PokePic");
+   PokePicEl.src = data.sprites.front_default;
+   PokePicEl.id = " ";
+ }
+var getPokeApi  =  function() {
   var apiUrl = "https://pokeapi.co/api/v2/pokemon/" + PokeDataEl;
   console.log(apiUrl);
-  fetch(apiUrl).then(function (response) {
-    response.json().then(function (data) {
-      PokeCommands(data);
-    });
-  });
-  //}
+  fetch(apiUrl).then(function(response) {
+   return response.json() }).then(function(data){
+     console.log(data.sprites.front_default)
+  var PokePicEl = document.querySelector("#PokePic");
+  var img = document.createElement("img");
+   img.src = data.sprites.front_default;
+   img.id = "returnedimg";
+ PokePicEl.appendChild(img)
+   }) 
+}
+  
 
-  function PokeCommands(data) {
-    var PokePicEl = document.querySelector("#PokePic");
-    PokePicEl.src = data.sprites.front_default;
-    PokePicEl.id = " ";
-  }
-};
 
-var PokeDatabl = localStorage.getItem("pokemon");
-console.log(PokeDatabl)
-const img = document.querySelectorAll("img"); 
-var PokePict = function()  {
-     if (PokeDatabl == "charmander") {
-      var img = document.createElement("img");
-      img.src = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png";
-      img.width = 400;
-      img.height = 400;
-      img.style.alignContent = "right";
+// var PokeDatabl = localStorage.getItem("pokemon");
+// console.log(PokeDatabl)
+ 
+// var PokePict = function()  {
+//   const pic = document.querySelector("#PokePic");
+//      if (PokeDatabl == "charmander") {
+//       var img = document.createElement("img");
+//       img.src = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png";
+//       img.width = 400;
+//       img.height = 400;
+//       img.style.alignContent = "right";
      
    
-  console.log("worked")
-      // This next line will just add it to the <body> tag
-      document.body.appendChild(img);
-  }
-  if (PokeDatabl == "bulbasaur") {
-    var img = document.createElement("img");
-    img.src = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png";
-    img.width = 400;
-    img.height = 400;
+//   console.log("worked")
+//       // This next line will just add it to the <body> tag
+//       pic.appendChild(img);
+//   }
+//   if (PokeDatabl == "bulbasaur") {
+//     var img = document.createElement("img");
+//     img.src = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png";
+//     img.width = 400;
+//     img.height = 400;
    
-console.log("worked")
-    // This next line will just add it to the <body> tag
-    document.body.appendChild(img);
-}
-if (PokeDatabl == "squirtle") {
-  var img = document.createElement("img");
-  img.src = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png";
-  img.width = 400;
-  img.height = 400;
+// console.log("worked")
+//     // This next line will just add it to the <body> tag
+//     pic.appendChild(img);
+// }
+// if (PokeDatabl == "squirtle") {
+//   var img = document.createElement("img");
+//   img.src = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png";
+//   img.width = 400;
+//   img.height = 400;
 
-console.log("worked")
-  // This next line will just add it to the <body> tag
-  document.body.appendChild(img);
-}
-  }
+// console.log("worked")
+//   // This next line will just add it to the <body> tag
+//   pic.appendChild(img);
+// }
+//   }
  
 
-PokePict();
+// PokePict();
 
 
 
