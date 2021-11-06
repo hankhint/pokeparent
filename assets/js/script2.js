@@ -14,10 +14,55 @@ var getPokeApi = function () {
 
   function PokeCommands(data) {
     var PokePicEl = document.querySelector("#PokePic");
-    PokePicEl.src = PokeDataEl.sprites.front_default;
+    PokePicEl.src = data.sprites.front_default;
     PokePicEl.id = " ";
   }
 };
+
+var PokeDatabl = localStorage.getItem("pokemon");
+console.log(PokeDatabl)
+const img = document.querySelectorAll("img"); 
+var PokePict = function()  {
+     if (PokeDatabl == "charmander") {
+      var img = document.createElement("img");
+      img.src = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png";
+      img.width = 400;
+      img.height = 400;
+      img.style.alignContent = "right";
+     
+   
+  console.log("worked")
+      // This next line will just add it to the <body> tag
+      document.body.appendChild(img);
+  }
+  if (PokeDatabl == "bulbasaur") {
+    var img = document.createElement("img");
+    img.src = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png";
+    img.width = 400;
+    img.height = 400;
+   
+console.log("worked")
+    // This next line will just add it to the <body> tag
+    document.body.appendChild(img);
+}
+if (PokeDatabl == "squirtle") {
+  var img = document.createElement("img");
+  img.src = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png";
+  img.width = 400;
+  img.height = 400;
+
+console.log("worked")
+  // This next line will just add it to the <body> tag
+  document.body.appendChild(img);
+}
+  }
+ 
+
+PokePict();
+
+
+
+
 
 var displayWeather = function (city, data) {
   var iconCode = data.weather[0].icon;
