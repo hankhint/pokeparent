@@ -27,6 +27,8 @@ var getPokeApi  =  function() {
   var img = document.createElement("img");
    img.src = data.sprites.front_default;
    img.id = "returnedimg";
+  // img.width = 200;
+  // img.height = 200;
  PokePicEl.appendChild(img)
    }) 
 }
