@@ -27,12 +27,14 @@ var getPokeApi  =  function() {
   var img = document.createElement("img");
    img.src = data.sprites.front_default;
    img.id = "returnedimg";
-  // img.width = 200;
-  // img.height = 200;
+   img.width = 220;
+  img.height = 218;
  PokePicEl.appendChild(img)
-   }) 
+   })
 }
   
+
+
 
 
 // var PokeDatabl = localStorage.getItem("pokemon");
