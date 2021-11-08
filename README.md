@@ -38,3 +38,5 @@ SO THAT I can build a better society through caring
 https://hankhint.github.io/pokeparent/
 
 ## Screenshot
+
+![image](https://user-images.githubusercontent.com/50533231/140671539-612be366-407e-4c94-aeb5-0d323999d0e6.png)
