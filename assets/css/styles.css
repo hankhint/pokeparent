@@ -1,5 +1,11 @@
 <<<<<<< HEAD
 =======
+
+*{
+  font-family:'Press+Start+2P';
+}
+
+
 .modal {
   display: flexbox; /* Hidden by default */
   position: absolute; /* Stay in place */
